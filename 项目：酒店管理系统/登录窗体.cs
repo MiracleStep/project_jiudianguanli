@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,6 +77,39 @@ namespace 项目_酒店管理系统
         private void groupBox1_Enter_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            string strName = txtName.Text;
+            string strPwd = txtPwd.Text;
+            if (string.IsNullOrEmpty(strPwd))
+            {
+                MessageBox.Show("密码不能为空","提示", buttons: MessageBoxButtons.OK,MessageBoxIcon.Information);
+                return;
+            }
+            User user = UserManager.GetUser(strName, strPwd);
+            if (user == null)
+            {
+                MessageBox.Show("用户名或密码错误", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                RoleManager.curUser = user;
+                this.Hide();
+                AddUserForm mainform = new AddUserForm();
+                mainform.show();
+            }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
