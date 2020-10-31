@@ -25,9 +25,9 @@ namespace 项目_酒店管理系统
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            miCheckOutRoomForm frm = new miCheckOutRoomForm();
-            frm.Mdiparent = this;
-            frm.show();
+            CheckOutRoomForm frm = new CheckOutRoomForm();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void 主界面窗体_Load(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace 项目_酒店管理系统
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             CheckInRoomForm frm = new CheckInRoomForm();
-            frm.Mdiparent = this;
+            frm.MdiParent = this;
             frm.Show();
         }
 

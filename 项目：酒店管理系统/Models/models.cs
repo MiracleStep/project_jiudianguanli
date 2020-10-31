@@ -148,7 +148,7 @@ namespace Models
         private int inId;
         private DateTime outTime;
         private string roomId;
-        private string clietnName;
+        private string clientName;
         private DateTime inTime;
         private double price;
         private double foregift;
@@ -161,7 +161,7 @@ namespace Models
         public int InId { get => inId; set => inId = value; }
         public DateTime OutTime { get => outTime; set => outTime = value; }
         public string RoomId { get => roomId; set => roomId = value; }
-        public string ClietnName { get => clietnName; set => clietnName = value; }
+        public string ClietnName { get => clientName; set => clientName = value; }
         public DateTime InTime { get => inTime; set => inTime = value; }
         public double Price { get => price; set => price = value; }
         public double Foregift { get => foregift; set => foregift = value; }
