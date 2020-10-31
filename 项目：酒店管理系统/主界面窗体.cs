@@ -42,7 +42,7 @@ namespace 项目_酒店管理系统
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            ChekInRoomForm frm = new ChekInRoomForm();
+            CheckInRoomForm frm = new CheckInRoomForm();
             frm.Mdiparent = this;
             frm.Show();
         }
