@@ -16,7 +16,7 @@ namespace 项目_酒店管理系统
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 登陆窗体());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -31,7 +31,6 @@
             this.txtQueryName = new System.Windows.Forms.TextBox();
             this.btnQuery = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvClient = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.cmbCertType = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.dgvClient = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,24 +77,6 @@
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "住客姓名";
-            // 
-            // dgvClient
-            // 
-            this.dgvClient.AllowUserToAddRows = false;
-            this.dgvClient.AllowUserToDeleteRows = false;
-            this.dgvClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClient.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.dgvClient.Location = new System.Drawing.Point(15, 40);
-            this.dgvClient.MultiSelect = false;
-            this.dgvClient.Name = "dgvClient";
-            this.dgvClient.ReadOnly = true;
-            this.dgvClient.RowHeadersWidth = 62;
-            this.dgvClient.RowTemplate.Height = 30;
-            this.dgvClient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClient.Size = new System.Drawing.Size(1306, 328);
-            this.dgvClient.TabIndex = 3;
-            this.dgvClient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClient_CellContentClick);
-            this.dgvClient.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvClient_CellFormatting);
             // 
             // label2
             // 
@@ -247,11 +229,29 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // dgvClient
+            // 
+            this.dgvClient.AllowUserToAddRows = false;
+            this.dgvClient.AllowUserToDeleteRows = false;
+            this.dgvClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClient.Location = new System.Drawing.Point(13, 48);
+            this.dgvClient.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvClient.MultiSelect = false;
+            this.dgvClient.Name = "dgvClient";
+            this.dgvClient.ReadOnly = true;
+            this.dgvClient.RowHeadersWidth = 62;
+            this.dgvClient.RowTemplate.Height = 23;
+            this.dgvClient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvClient.Size = new System.Drawing.Size(1288, 298);
+            this.dgvClient.TabIndex = 21;
+            this.dgvClient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClient_CellContentClick_1);
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 669);
+            this.Controls.Add(this.dgvClient);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cmbCertType);
             this.Controls.Add(this.rbFemale);
@@ -269,7 +269,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dgvClient);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnQuery);
             this.Controls.Add(this.txtQueryName);
@@ -287,7 +286,6 @@
         private System.Windows.Forms.TextBox txtQueryName;
         private System.Windows.Forms.Button btnQuery;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvClient;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -305,5 +303,6 @@
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.ComboBox cmbCertType;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridView dgvClient;
     }
 }

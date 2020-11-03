@@ -29,7 +29,7 @@ namespace 项目_酒店管理系统
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i <= dt.Rows.Count; i++)
+            for (int i = 0; i <= dt.Rows.Count-1; i++)
             {
                 if (cmbRoomId.SelectedIndex.ToString() == dt.Rows[i]["房间号"].ToString())
                 {

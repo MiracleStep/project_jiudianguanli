@@ -31,13 +31,12 @@ namespace 项目_酒店管理系统
 
         private void UserManagerForm_Load(object sender, EventArgs e)
         {
-            /*
-          * con = new MySqlConnection(Connstr);
-         da = new MySqlDataAdapter("select * from user", con);
-         ds = new DataSet();
-         da.Fill(ds, "user");
-         dgvUsers.DataSource = ds.Tables["user"];
-         */
+             con = new MySqlConnection(Connstr);
+             da = new MySqlDataAdapter("select * from user", con);
+             ds = new DataSet();
+             da.Fill(ds, "user");
+             dgvUsers.DataSource = ds.Tables["user"];
+         
             string sql = "select * from user";
             dgvUsers.DataSource = DBOper.GetDataTable(sql);
         }

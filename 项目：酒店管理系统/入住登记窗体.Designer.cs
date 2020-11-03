@@ -60,7 +60,6 @@
             this.txtOper = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -199,6 +198,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(226, 28);
             this.txtPrice.TabIndex = 13;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // txtRoomId
             // 
@@ -344,6 +344,7 @@
             this.txtOper.ReadOnly = true;
             this.txtOper.Size = new System.Drawing.Size(100, 28);
             this.txtOper.TabIndex = 2;
+            this.txtOper.TextChanged += new System.EventHandler(this.txtOper_TextChanged);
             // 
             // label13
             // 
@@ -361,15 +362,6 @@
             this.label14.Size = new System.Drawing.Size(62, 18);
             this.label14.TabIndex = 4;
             this.label14.Text = "操作员";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -398,7 +390,6 @@
             this.ClientSize = new System.Drawing.Size(1086, 679);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtOper);
@@ -448,7 +439,6 @@
         private System.Windows.Forms.TextBox txtOper;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnReset;
     }

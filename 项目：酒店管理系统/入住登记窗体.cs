@@ -183,5 +183,20 @@ namespace 项目_酒店管理系统
             txtAddress.Text = "";
             txtPersonNum.Text = "";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOper_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

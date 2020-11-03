@@ -20,8 +20,8 @@ namespace BLL
 
         public static bool InsertRoomInfo(CheckInRoom registerRoomInfo)
         {
-            string sqlInsert = @"insert into checkin values(null,@roomId,@price,@foregift,@inTime,@outTime,@clientName,@sex,@phone,@certType,@certId,
-                                  @address,@personNum,@Oper,@delMark)";
+            string sqlInsert = @"insert into checkin values(null,@roomId,@price,@foregift,@inTime,@outTime,@clientName,
+                            @sex,@phone,@cerType,@certId,@address,@personNum,@Oper,@deMark)";
             MySqlParameter p1 = new MySqlParameter("@roomId", registerRoomInfo.RoomId);
             MySqlParameter p2 = new MySqlParameter("@price", registerRoomInfo.Price);
             MySqlParameter p3 = new MySqlParameter("@foregift", registerRoomInfo.Foregift);
@@ -37,10 +37,7 @@ namespace BLL
             MySqlParameter p13 = new MySqlParameter("@Oper", registerRoomInfo.Oper);
             MySqlParameter p14 = new MySqlParameter("@delMark", registerRoomInfo.DelMark);
 
-            MySqlParameter[] paramArray = new MySqlParameter[]
-            {
-                p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14
-            };
+            MySqlParameter[] paramArray = new MySqlParameter[] { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14 };
             string sqlUpdate = "update room set inPerson=@inPerson where roomId=@roomId";
             MySqlParameter n1 = new MySqlParameter("@roomId", registerRoomInfo.RoomId);
             MySqlParameter n2 = new MySqlParameter("@inPerson", registerRoomInfo.PersonNum);
@@ -117,7 +114,7 @@ namespace BLL
         public static DataTable GetRoomUseInfo()
         {
             string sql = @"select roomId as 房间号,roomType as 房间类型,roomFloor as 层数,
-                            Price as 价格,personNum as 可入住人数,inPerson as 已入住人数，note as 备注 from room where inPerson!=0";
+                            Price as 价格,personNum as 可入住人数,inPerson as 已入住人数,note as 备注 from room where inPerson!=0";
             DataTable dt = DBOper.GetDataTable(sql);
             return dt;
         }

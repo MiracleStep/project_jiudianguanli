@@ -58,7 +58,7 @@ namespace BLL
         public static DataTable GetClient(string roomId)
         {
             string sql = @"select roomId as 房间号,price as 价格,foregift as 押金,inTime as 入住时间,outTime as 退房时间,
-                            clientName as 住客姓名,sex as 性别,phone as 电话号码,certType as 证件类型，certId as 证件号码,
+                            clientName as 住客姓名,sex as 性别,phone as 电话号码,certType as 证件类型,certId as 证件号码,
                             address as 地址,personNum as 入住人数,Oper as 登记者 from checkin where delMark=0 and roomId =" + roomId;
             DataTable dt = DBOper.GetDataTable(sql);
             return dt;

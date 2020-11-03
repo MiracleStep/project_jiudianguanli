@@ -79,5 +79,10 @@ namespace 项目_酒店管理系统
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void miAbout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

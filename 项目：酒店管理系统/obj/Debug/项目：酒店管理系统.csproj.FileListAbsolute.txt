@@ -80,7 +80,6 @@ C:\Users\suxiang\OneDrive\桌面\project_jiudianguanli\项目：酒店管理系�
 C:\Users\suxiang\OneDrive\桌面\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目_酒店管理系统.MainForm.resources
 C:\Users\suxiang\OneDrive\桌面\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目_酒店管理系统.Form1.resources
 C:\Users\suxiang\OneDrive\桌面\新建文件夹\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目：酒店管理系统.csprojAssemblyReference.cache
-C:\Users\suxiang\OneDrive\桌面\新建文件夹\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目_酒店管理系统.Form6.resources
 C:\Users\suxiang\OneDrive\桌面\新建文件夹\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目_酒店管理系统.ClientForm.resources
 C:\Users\suxiang\OneDrive\桌面\新建文件夹\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目_酒店管理系统.UserManagerForm.resources
 C:\Users\suxiang\OneDrive\桌面\新建文件夹\project_jiudianguanli\项目：酒店管理系统\obj\Debug\项目_酒店管理系统.CheckInRoomForm.resources

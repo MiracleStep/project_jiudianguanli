@@ -102,8 +102,8 @@ namespace 项目_酒店管理系统
             {
                 RoleManager.curUser = user;
                 this.Hide();
-                AddUserForm mainform = new AddUserForm();
-                mainform.show();
+                MainForm mainform = new MainForm();
+                mainform.Show();
             }
         }
 

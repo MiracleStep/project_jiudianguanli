@@ -27,36 +27,7 @@ namespace 项目_酒店管理系统
 
         private void dgvClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var rows = dgvClient.SelectedRows;
-            if (rows.Count == 0)
-            {
-                txtClientName.Text = "";
-                rbMale.Checked = false;
-                rbFemale.Checked = false;
-                txtPhone.Text = "";
-                cmbCertType.SelectedItem = "";
-                txtCertId.Text = "";
-                txtAddress.Text = "";
-                txtPersonNum.Text = "";
-                btnSave.Enabled = false;
-                return;
-            }
-            btnSave.Enabled = true;
-            var row = rows[0];
-            txtClientName.Text = row.Cells[5].Value.ToString();
-            if (row.Cells[6].Value.ToString() == "0")
-            {
-                rbMale.Checked = true;
-            }
-            else
-            {
-                rbFemale.Checked = true;
-            }
-            txtPhone.Text = row.Cells[7].Value.ToString();
-            cmbCertType.SelectedItem = row.Cells[8].Value;
-            txtCertId.Text = row.Cells[9].Value.ToString();
-            txtAddress.Text = row.Cells[10].Value.ToString();
-
+            
         }
 
         private void btnQuery_Click(object sender, EventArgs e)
@@ -173,5 +144,37 @@ namespace 项目_酒店管理系统
             
         }
 
+        private void dgvClient_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            var rows = dgvClient.SelectedRows;
+            if (rows.Count == 0)
+            {
+                txtClientName.Text = "";
+                rbMale.Checked = false;
+                rbFemale.Checked = false;
+                txtPhone.Text = "";
+                cmbCertType.SelectedItem = "";
+                txtCertId.Text = "";
+                txtAddress.Text = "";
+                txtPersonNum.Text = "";
+                btnSave.Enabled = false;
+                return;
+            }
+            btnSave.Enabled = true;
+            var row = rows[0];
+            txtClientName.Text = row.Cells[5].Value.ToString();
+            if (row.Cells[6].Value.ToString() == "0")
+            {
+                rbMale.Checked = true;
+            }
+            else
+            {
+                rbFemale.Checked = true;
+            }
+            txtPhone.Text = row.Cells[7].Value.ToString();
+            cmbCertType.SelectedItem = row.Cells[8].Value;
+            txtCertId.Text = row.Cells[9].Value.ToString();
+            txtAddress.Text = row.Cells[10].Value.ToString();
+        }
     }
 }

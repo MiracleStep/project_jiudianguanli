@@ -99,6 +99,7 @@
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(363, 39);
             this.txtPwd.TabIndex = 5;
+            this.txtPwd.UseSystemPasswordChar = true;
             // 
             // 登录
             // 

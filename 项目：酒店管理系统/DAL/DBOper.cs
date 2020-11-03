@@ -13,7 +13,7 @@ namespace DAL
     /// </summary>
     class DBOper
     {
-        static string Connstr = "server=localhost;user id= root;password=1584699582;database=Hotel;Charset=utf8;";
+        static string Connstr = "server=localhost;user id= root;password=1584699582;database=Hotel;Charset=utf8;Allow User Variables=True;";
         private static MySqlConnection conn;
         public static MySqlConnection Connection()  //数据库连接函数
         {

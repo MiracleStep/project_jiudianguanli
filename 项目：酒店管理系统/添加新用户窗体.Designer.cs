@@ -141,7 +141,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddUserForm";
-            this.Text = "Form1";
+            this.Text = "添加新用户";
             this.Load += new System.EventHandler(this.AddUserForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
